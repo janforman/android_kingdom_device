@@ -1,7 +1,6 @@
-Copyright 2017 - The LineageOS Project
-
-Device configuration for Lenovo Vibe Z2 Pro
-===========================================
+Device layer for Lenovo Vibe Z2 Pro
+for LineageOS 16
+===================================
 
 Basic   | Specification List
 -------:|:-------------------------
