@@ -1,4 +1,4 @@
-Device files for Lenovo Vibe Z2 Pro
+Device tree for Lenovo Vibe Z2 Pro
 ===================================
 
 Basic   | Specification List
