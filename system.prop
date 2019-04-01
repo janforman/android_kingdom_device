@@ -18,7 +18,7 @@ ro.qualcomm.bluetooth.nap=true
 ro.qualcomm.bluetooth.opp=true
 ro.qualcomm.bluetooth.pbap=true
 
-# Display Graphics
+# Display and Graphics
 ro.sf.lcd_density=480
 ro.qualcomm.cabl=1
 ro.opengles.version=196608
