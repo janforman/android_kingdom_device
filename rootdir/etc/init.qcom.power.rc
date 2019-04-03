@@ -1,6 +1,6 @@
 on early-init
     restorecon --recursive /sys/block/mmcblk0/queue
-    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk0/queue/read_ahead_kb 1024
 
 on enable-low-power
     write /sys/module/lpm_levels/enable_low_power/l2 4
@@ -97,6 +97,5 @@ on property:init.svc.recovery=running
 
 on property:sys.boot_completed=1
     rm /data/system/perfd/default_values
-    setprop sys.io.scheduler "row"
     setprop vendor.post_boot.parsed 1
     start mpdecision
