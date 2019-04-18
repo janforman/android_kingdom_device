@@ -260,7 +260,8 @@ BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_qcwcn
 PRODUCT_VENDOR_MOVE_ENABLED      := true
 WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
-TARGET_USES_QCOM_WCNSS_QMI       := true
 TARGET_USES_WCNSS_MAC_ADDR_REV   := true
+TARGET_DISABLE_WCNSS_CONFIG_COPY := true
+TARGET_USES_QCOM_WCNSS_QMI       := true
 
 -include vendor/lenovo/kingdom/BoardConfigVendor.mk
