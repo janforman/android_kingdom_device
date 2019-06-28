@@ -109,6 +109,10 @@ BLINK_PATH := "/sys/class/leds/led:rgb_red/blink"
 
 # Display
 TARGET_MSM8974_1440P_EGL_WORKAROUND := true
+MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
+
+# Exclude serif fonts for saving system.img size.
+EXCLUDE_SERIF_FONTS := true
 
 # Lineage Hardware
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
@@ -164,11 +168,9 @@ TARGET_PROVIDES_GPS_LOC_API := true
 
 # Graphics
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
-VSYNC_EVENT_PHASE_OFFSET_NS := true
 TARGET_USES_ION := true
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-HAVE_ADRENO_SOURCE := false
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
 # Shader cache config options
