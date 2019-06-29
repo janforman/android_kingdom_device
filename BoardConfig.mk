@@ -107,6 +107,9 @@ GREEN_LED_PATH := "/sys/class/leds/led:rgb_green/brightness"
 BLUE_LED_PATH := "/sys/class/leds/led:rgb_blue/brightness"
 BLINK_PATH := "/sys/class/leds/led:rgb_red/blink"
 
+# Exclude serif fonts for saving system.img size
+EXCLUDE_SERIF_FONTS := true
+
 # Display
 TARGET_MSM8974_1440P_EGL_WORKAROUND := true
 
