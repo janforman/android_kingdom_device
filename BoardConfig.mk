@@ -50,6 +50,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom \
                         androidboot.bootdevice=msm_sdcc.1 \
 			ehci-hcd.park=3 \
 			pm.sleep.mode=2 \
+			vmalloc=480M \
 			androidboot.selinux=permissive
 
 BOARD_KERNEL_SEPARATED_DT := true
