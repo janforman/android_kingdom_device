@@ -130,7 +130,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapsize=512m \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=2m \
-    dalvik.vm.heapmaxfree=16m \
     dalvik.vm.verify-bytecode=false \
     persist.sys.purgeable_assets=1
 
