@@ -60,7 +60,7 @@
             <defaultOutputDevice>Speaker</defaultOutputDevice>
             <mixPorts>
                 <mixPort name="primary output" role="source"
-                        flags="AUDIO_OUTPUT_FLAG_FAST|AUDIO_OUTPUT_FLAG_PRIMARY">
+                        flags="AUDIO_OUTPUT_FLAG_PRIMARY">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="44100,48000"
                              channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
@@ -97,7 +97,8 @@
                              samplingRates="8000,16000,48000"
                              channelMasks="AUDIO_CHANNEL_OUT_MONO,AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
-                 <mixPort name="voip_rx" role="source">
+                 <mixPort name="voip_rx" role="source"
+                          flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_VOIP_RX">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000,16000"
                              channelMasks="AUDIO_CHANNEL_OUT_MONO"/>
@@ -209,7 +210,7 @@
                 <route type="mix" sink="Wired Headphones"
                        sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
                 <route type="mix" sink="Line"
-                       sources="primary output,deep_buffer,compressed_offload"/>
+                       sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
                 <route type="mix" sink="HDMI"
                        sources="primary output,deep_buffer,compressed_offload"/>
                 <route type="mix" sink="Proxy"
