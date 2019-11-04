@@ -33,7 +33,6 @@ LOCAL_ADDITIONAL_DEPENDENCIES += \
 
 LOCAL_SHARED_LIBRARIES := \
      liblog libutils libcutils libdl libtfa98xx
-LOCAL_CFLAGS := -Wall -Werror -Wno-unused-parameter
 
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
