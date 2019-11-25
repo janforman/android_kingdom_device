@@ -121,7 +121,7 @@ set_variant_row:
     property_override("ro.product.name", device.c_str());
 
     // LTE+3G+2G on both SIMs
-    property_set("ro.telephony.default_network", "9,9");
+    property_set("ro.telephony.default_network", "10,10");
 
     LOG(INFO) << LOG_TAG << ": Build properties set for " << device << " device";
 }
