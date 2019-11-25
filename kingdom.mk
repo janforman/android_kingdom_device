@@ -415,3 +415,7 @@ PRODUCT_PACKAGES += \
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/lenovo/kingdom/kingdom-vendor.mk)
+
+#ro.product.first_api_level indicates the first api level that the device has been commercially launched on.
+PRODUCT_PROPERTY_OVERRIDES +=\
+ro.product.first_api_level=19

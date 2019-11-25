@@ -77,6 +77,3 @@ ro.com.widevine.cachesize=16777216
 # Wifi
 wifi.interface=wlan0
 wifi.direct.interface=p2p0
-
-# ro.product.first_api_level indicates the first api level the device has commercially launched on.
-ro.product.first_api_level=19
