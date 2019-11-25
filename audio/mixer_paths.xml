@@ -865,7 +865,6 @@
 
     <path name="compress-voip-call smartpa">
         <ctl name="QUAT_MI2S_RX_Voice Mixer Voip" value="1" />
-	<ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
 
