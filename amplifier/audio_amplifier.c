@@ -119,7 +119,7 @@ static int amp_module_open(const hw_module_t *module,
     tfa9890_dev->common.version = HARDWARE_DEVICE_API_VERSION(1, 0);
     tfa9890_dev->common.close = amp_dev_close;
 
-    tfa9890_dev->enable_output_devices = amp_enable_output_devices;
+    tfa9890_dev->enable_output_devices = &amp_enable_output_devices;
 
     if (amp_init(tfa9890_dev)) {
         free(tfa9890_dev);
