@@ -24,7 +24,7 @@
   </backend_names>
 
   <device_names>
-    <device name="SND_DEVICE_OUT_VOIP_HANDSET" alias="voice-handset" />
+    <device name="SND_DEVICE_OUT_VOIP_HANDSET" alias="dmic-endfire" />
     <device name="SND_DEVICE_OUT_VOIP_SPEAKER" alias="voice-speaker" />
     <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" alias="voice-headphones" />
 
