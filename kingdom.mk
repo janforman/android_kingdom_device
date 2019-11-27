@@ -101,7 +101,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.gapless.enabled=true \
     vendor.audio.offload.multiple.enabled=false \
     vendor.audio.tunnel.encode=true \
-    vendor.dedicated.device.for.voip=true
+    use.dedicated.device.for.voip=true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
