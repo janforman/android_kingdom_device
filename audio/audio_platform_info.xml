@@ -3,13 +3,13 @@
   <acdb_ids>
     <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="42"/>   <!-- voice-speaker-mic -->
 
-    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" acdb_id="108"/>
-    <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" acdb_id="114"/>
-    <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" acdb_id="47"/>
+    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" acdb_id="4"/>
+    <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" acdb_id="42"/>
+    <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" acdb_id="4"/>
     <device name="SND_DEVICE_OUT_VOIP_HANDSET" acdb_id="7"/>
     <device name="SND_DEVICE_OUT_VOIP_SPEAKER" acdb_id="14"/>
     <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" acdb_id="10"/>
-    
+
     <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="52"/>       <!-- camcorder-mic -->
     <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="50"/>         <!-- handset-mic -->
   </acdb_ids>
@@ -24,11 +24,11 @@
   </backend_names>
 
   <device_names>
-    <device name="SND_DEVICE_OUT_VOIP_HANDSET" alias="dmic-endfire" />
+    <device name="SND_DEVICE_OUT_VOIP_HANDSET" alias="voice-handset" />
     <device name="SND_DEVICE_OUT_VOIP_SPEAKER" alias="voice-speaker" />
     <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" alias="voice-headphones" />
 
-    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" alias="voice-handset-mic" />
+    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" alias="dmic-endfire" />
     <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" alias="voice-speaker-mic" />
     <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" alias="voice-headset-mic" />
   </device_names>
