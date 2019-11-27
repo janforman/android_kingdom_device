@@ -28,7 +28,7 @@
     <device name="SND_DEVICE_OUT_VOIP_SPEAKER" alias="voice-speaker" />
     <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" alias="voice-headphones" />
 
-    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" alias="dmic-endfire" />
+    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" alias="voice-handset-mic" />
     <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" alias="voice-speaker-mic" />
     <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" alias="voice-headset-mic" />
   </device_names>
