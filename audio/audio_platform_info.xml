@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <audio_platform_info>
   <acdb_ids>
-    <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="42"/>   <!-- voice-speaker-mic -->
+   <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="42"/>   <!-- voice-speaker-mic -->
 
-    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" acdb_id="4"/>
-    <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" acdb_id="42"/>
-    <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" acdb_id="4"/>
-    <device name="SND_DEVICE_OUT_VOIP_HANDSET" acdb_id="7"/>
-    <device name="SND_DEVICE_OUT_VOIP_SPEAKER" acdb_id="14"/>
-    <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" acdb_id="10"/>
+    <device name="SND_DEVICE_OUT_VOIP_HANDSET" acdb_id="7" />       <!-- voice-handset -->
+    <device name="SND_DEVICE_OUT_VOIP_SPEAKER" acdb_id="14" />      <!-- voice-speaker -->
+    <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" acdb_id="10" />   <!-- voice-headphones -->
+
+    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" acdb_id="41" />   <!-- dmic-endfire -->
+    <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" acdb_id="42" />   <!-- voice-speaker-mic -->
+    <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" acdb_id="8" />    <!-- voice-headset-mic -->
 
     <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="52"/>       <!-- camcorder-mic -->
     <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="50"/>         <!-- handset-mic -->

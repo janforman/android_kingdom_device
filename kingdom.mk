@@ -82,8 +82,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.sec.smoothstreaming=true \
     mm.enable.qcom_parser=37491 \
     ro.audio.flinger_standbytime_ms=300 \
-    ro.vendor.audio.sdk.fluencetype=fluence \
-    persist.vendor.audio.fluence.voicecall=true \
+    ro.qc.sdk.audio.fluencetype=fluence \
+    persist.audio.fluence.voicecall=true \
+    persist.audio.fluence.voicerec=false \
+    persist.audio.fluence.speaker=false \
     persist.audio.handset.mic=digital \
     persist.audio.voicecall.mic=0 \
     persist.audio.voice.clarity=none \
@@ -97,7 +99,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.gapless.enabled=true \
     vendor.audio.offload.multiple.enabled=false \
     vendor.audio.tunnel.encode=true \
-    vendor.dedicated.device.for.voip=true
+    use.dedicated.device.for.voip=true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
