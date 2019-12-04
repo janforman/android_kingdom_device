@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2015-2016 The CyanogenMod Project
-#           (C) 2017-2019 The LineageOS Project
+#           (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -112,7 +112,6 @@ EXCLUDE_SERIF_FONTS := true
 
 # Display
 TARGET_MSM8974_1440P_EGL_WORKAROUND := true
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
 # Lineage Hardware
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
