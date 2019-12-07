@@ -1218,7 +1218,7 @@
     </path>
 
     <path name="voice-handset-mic">
-        <path name="speaker-mic" />
+        <path name="dmic1" />
     </path>
 
     <path name="voice-speaker-mic">
