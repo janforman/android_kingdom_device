@@ -7,7 +7,7 @@
     <device name="SND_DEVICE_OUT_VOIP_SPEAKER" acdb_id="14" />      <!-- voice-speaker -->
     <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" acdb_id="10" />   <!-- voice-headphones -->
 
-    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" acdb_id="35" />   <!-- voice-handset-mic -->
+    <device name="SND_DEVICE_IN_VOIP_HANDSET_MIC" acdb_id="4" />    <!-- voice-handset-mic -->
     <device name="SND_DEVICE_IN_VOIP_SPEAKER_MIC" acdb_id="102" />  <!-- voice-speaker-mic -->
     <device name="SND_DEVICE_IN_VOIP_HEADSET_MIC" acdb_id="4" />    <!-- voice-headset-mic -->
 
