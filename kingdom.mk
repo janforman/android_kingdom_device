@@ -97,6 +97,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.speaker.prot.enable=false \
     persist.audio.spkcall_2mic=OFF \
     use.voice.path.for.pcm.voip=true \
+    debug.stagefright.ccodec=0 \
     vendor.audio_hal.period_size=192 \
     vendor.audio.offload.buffer.size.kb=32 \
     vendor.audio.offload.gapless.enabled=true \
