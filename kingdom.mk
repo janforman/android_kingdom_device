@@ -349,10 +349,8 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # RRO
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/Snap \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
 
 # Seccomp
 PRODUCT_COPY_FILES += \
