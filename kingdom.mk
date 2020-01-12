@@ -82,7 +82,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.sec.smoothstreaming=true \
     mm.enable.qcom_parser=37491 \
     ro.audio.flinger_standbytime_ms=300 \
-    ro.config.vc_call_vol_steps=6 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicerec=false \
