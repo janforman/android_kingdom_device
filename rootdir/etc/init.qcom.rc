@@ -205,9 +205,6 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
-    # Make WCNSS_qcom_cfg.ini available in /data/vendor
-    symlink /data/misc/wifi/WCNSS_qcom_cfg.ini /data/vendor/wifi/WCNSS_qcom_cfg.ini
-
     # Create the directories used by CnE subsystem
     mkdir /data/connectivity 0771 system system
     chown system system /data/connectivity
