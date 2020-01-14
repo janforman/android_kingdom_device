@@ -82,6 +82,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.sec.smoothstreaming=true \
     mm.enable.qcom_parser=37491 \
     ro.audio.flinger_standbytime_ms=300 \
+    ro.config.vc_call_vol_steps=6 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicerec=false \
@@ -193,7 +194,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.composer@2.1-impl \
-    android.hardware.graphics.mapper@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     copybit.msm8974 \
     gralloc.msm8974 \
@@ -404,7 +405,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv_enhanced.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service.legacy \
+    android.hardware.wifi@1.0-service \
     libwpa_client \
     hostapd \
     wcnss_service \
