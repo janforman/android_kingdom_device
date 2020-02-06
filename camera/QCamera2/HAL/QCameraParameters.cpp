@@ -5793,6 +5793,10 @@ int32_t QCameraParameters::setAntibanding(const char *antiBandingStr)
         int32_t value = lookupAttr(ANTIBANDING_MODES_MAP,
                                    sizeof(ANTIBANDING_MODES_MAP)/sizeof(QCameraMap),
                                    antiBandingStr);
+        if (value == CAM_ANTIBANDING_MODE_OFF) {
+            /* Never disable antibanding */
+            return NO_ERROR;
+        }
         if (value != NAME_NOT_FOUND) {
             ALOGV("%s: Setting AntiBanding value %s", __func__, antiBandingStr);
             updateParamEntry(KEY_ANTIBANDING, antiBandingStr);
