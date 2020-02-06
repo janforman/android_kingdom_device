@@ -1669,10 +1669,10 @@ bool QCameraParameters::UpdateHFRFrameRate(const QCameraParameters& params)
                 __func__, parm_minfps, parm_maxfps);
 
     const char *hfrStr = params.get(KEY_QC_VIDEO_HIGH_FRAME_RATE);
-
     const char *hsrStr = params.get(KEY_QC_VIDEO_HIGH_SPEED_RECORDING);
-    ALOGE("%s: prevHfrStr - %s, hfrStr = %s ",	
-                __func__, prev_hfrStr, hfrStr);	    const char *prev_hfrStr = CameraParameters::get(KEY_QC_VIDEO_HIGH_FRAME_RATE);
+    const char *prev_hfrStr = CameraParameters::get(KEY_QC_VIDEO_HIGH_FRAME_RATE);
+    ALOGE("%s: prevHfrStr - %s, hfrStr = %s ",
+                __func__, prev_hfrStr, hfrStr);
     if(hfrStr != NULL){	    const char *prev_hsrStr = CameraParameters::get(KEY_QC_VIDEO_HIGH_SPEED_RECORDING);
 
     if(hfrStr != NULL && strcmp(hfrStr, prev_hfrStr)) {
@@ -4136,7 +4136,7 @@ int32_t QCameraParameters::initDefaultParameters()
             m_pCapability->hfr_tbl,
             m_pCapability->hfr_tbl_cnt);
     set(KEY_QC_SUPPORTED_HFR_SIZES, hfrSizeValues.string());
-    setHighFrameRate(VIDEO_HFR_OFF);
+    setHighFrameRate(CAM_HFR_MODE_OFF);
 
     // Set Focus algorithms
     String8 focusAlgoValues = createValuesString(
