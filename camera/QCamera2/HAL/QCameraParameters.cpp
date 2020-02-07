@@ -3930,8 +3930,8 @@ int32_t QCameraParameters::initDefaultParameters()
     set(KEY_JPEG_THUMBNAIL_QUALITY, 92);
 
     //set HFR 60fps
-    camCapability->hfr_tbl_cnt = 1;
-    camCapability->hfr_tbl[0].mode = CAM_HFR_MODE_60FPS;
+    m_pCapability->hfr_tbl_cnt = 1;
+    m_pCapability->hfr_tbl[0].mode = CAM_HFR_MODE_60FPS;
 
     // Set FPS ranges
     if (m_pCapability->fps_ranges_tbl_cnt > 0 &&
