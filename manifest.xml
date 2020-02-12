@@ -131,7 +131,7 @@
     <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
         <transport arch="32">passthrough</transport>
-        <version>2.2</version>
+        <version>2.1</version>
         <interface>
             <name>IComposer</name>
             <instance>default</instance>
@@ -164,7 +164,7 @@
         <version>1.0</version>
         <interface>
             <name>IHealth</name>
-	    <instance>backup</instance>
+            <instance>backup</instance>
             <instance>default</instance>
         </interface>
     </hal>
