@@ -3843,7 +3843,8 @@ int32_t QCameraParameters::initDefaultParameters()
     }
 
     // inject non standard video sizes
-    if (cameraId == CAM_POSITION_BACK) {
+    int i;
+    if (m_pCapability->position == CAM_POSITION_BACK) {
         /* supported preview sizes */
         for (i = m_pCapability->preview_sizes_tbl_cnt; i > 0; i--)
             m_pCapability->preview_sizes_tbl[i] = m_pCapability->preview_sizes_tbl[i - 1];
@@ -3856,7 +3857,7 @@ int32_t QCameraParameters::initDefaultParameters()
         m_pCapability->video_sizes_tbl[0] = {4096, 2160};
         m_pCapability->video_sizes_tbl_cnt++;
 
-    } else if (cameraId == CAM_POSITION_FRONT) {
+    } else if (m_pCapability->position == CAM_POSITION_FRONT) {
         /* supported preview sizes */
         for (i = m_pCapability->preview_sizes_tbl_cnt; i > 0; i--)
             m_pCapability->preview_sizes_tbl[i] = m_pCapability->preview_sizes_tbl[i - 1];
