@@ -89,6 +89,19 @@
              channels="2" />
     </EncoderProfile>
 
+    <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
+      <Video codec="h264"
+             bitRate="75000000"
+             width="4096"
+             height="2160"
+             frameRate="24" />
+
+      <Audio codec="aac"
+             bitRate="320000"
+             sampleRate="48000"
+             channels="2" />
+    </EncoderProfile>
+
     <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="75000000"
