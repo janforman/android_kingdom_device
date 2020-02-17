@@ -1252,7 +1252,7 @@ int32_t QCameraParameters::setLiveSnapshotSize(const QCameraParameters& params)
     const char *hsrStr = params.get(KEY_QC_VIDEO_HIGH_SPEED_RECORDING);
 
     if (hsrStr != NULL && strcmp(hsrStr, "off")) {
-        int32_t value = lookupAttr(HFR_MODES_MAP, sizeof(HFR_MODES_MAP)/sizeof(QCameraMap),hsrStr);
+        int32_t value = lookupAttr(HFR_MODES_MAP, sizeof(HFR_MODES_MAP)/sizeof(QCameraMap),hfrStr);
         for (int i = 0; i < m_pCapability->hfr_tbl_cnt; i++) {
             if (m_pCapability->hfr_tbl[i].mode == value) {
                 livesnapshot_sizes_tbl_cnt =
@@ -1728,8 +1728,8 @@ bool QCameraParameters::UpdateHFRFrameRate(const QCameraParameters& params)
                     max_fps = 0;
                     break;
             }
-            m_hfrFpsRange.video_min_fps = min_fps;
-            m_hfrFpsRange.video_max_fps = max_fps;
+            m_hfrFpsRange.video_min_fps = (float)min_fps;
+            m_hfrFpsRange.video_max_fps = (float)max_fps;
 
             ALOGE("%s: HFR mode (%d) Set video FPS : minFps = %d, maxFps = %d ",
                    __func__, mHfrMode, min_fps, max_fps);
