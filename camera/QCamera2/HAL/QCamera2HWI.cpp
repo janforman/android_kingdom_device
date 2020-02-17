@@ -1147,6 +1147,35 @@ int QCamera2HardwareInterface::openCamera()
                                               camEvtHandle,
                                               (void *) this);
 
+    // inject non standard video sizes
+    int i;
+    if (cameraId == CAM_POSITION_BACK) {
+        /* supported preview sizes */
+        for (i = m_pCapability->preview_sizes_tbl_cnt; i > 0; i--)
+            m_pCapability->preview_sizes_tbl[i] = m_pCapability->preview_sizes_tbl[i - 1];
+        m_pCapability->preview_sizes_tbl[0] = {4096, 2160};
+        m_pCapability->preview_sizes_tbl_cnt++;
+
+        /* supported video sizes */
+        for (i = m_pCapability->video_sizes_tbl_cnt; i > 0; i--)
+            m_pCapability->video_sizes_tbl[i] = m_pCapability->video_sizes_tbl[i - 1];
+        m_pCapability->video_sizes_tbl[0] = {4096, 2160};
+        m_pCapability->video_sizes_tbl_cnt++;
+
+    } else if (cameraId == CAM_POSITION_FRONT) {
+        /* supported preview sizes */
+        for (i = m_pCapability->preview_sizes_tbl_cnt; i > 0; i--)
+            m_pCapability->preview_sizes_tbl[i] = m_pCapability->preview_sizes_tbl[i - 1];
+        m_pCapability->preview_sizes_tbl[0] = {2560, 1440};
+        m_pCapability->preview_sizes_tbl_cnt++;
+
+        /* supported video sizes */
+        for (i = m_pCapability->video_sizes_tbl_cnt; i > 0; i--)
+            m_pCapability->video_sizes_tbl[i] = m_pCapability->video_sizes_tbl[i - 1];
+        m_pCapability->video_sizes_tbl[0] = {2560, 1440};
+        m_pCapability->video_sizes_tbl_cnt++;
+    }
+
     /* get max pic size for jpeg work buf calculation*/
     for(i = 0; i < gCamCapability[mCameraId]->picture_sizes_tbl_cnt - 1; i++)
     {
