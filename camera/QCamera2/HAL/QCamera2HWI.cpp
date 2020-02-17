@@ -1169,8 +1169,8 @@ int QCamera2HardwareInterface::openCamera()
         m_pCapability->preview_sizes_tbl_cnt++;
 
         /* supported video sizes */
-        for (ii = m_pCapability->video_sizes_tbl_cnt; i > 0; i--)
-            m_pCapability->video_sizes_tbl[ii] = m_pCapability->video_sizes_tbl[i - 1];
+        for (i = m_pCapability->video_sizes_tbl_cnt; i > 0; i--)
+            m_pCapability->video_sizes_tbl[i] = m_pCapability->video_sizes_tbl[i - 1];
         m_pCapability->video_sizes_tbl[0] = {2560, 1440};
         m_pCapability->video_sizes_tbl_cnt++;
     }
