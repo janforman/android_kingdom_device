@@ -84,6 +84,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.flinger_standbytime_ms=300 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.fluence.voicecall=true \
+    persist.vendor.audio.fluence.voicecomm=true \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.fluence.speaker=true \
     persist.audio.fluence.mode=endfire \
