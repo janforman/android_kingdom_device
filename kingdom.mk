@@ -104,7 +104,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.multiple.enabled=false \
     vendor.audio.tunnel.encode=true \
     vendor.audio.feature.a2dp_offload.enable=false \
-    vendor.dedicated.device.for.voip=true
+    vendor.dedicated.device.for.voip=true \
+    vendor.vidc.enc.disable.pq=true \
+    vidc.enc.dcvs.extra-buff-count=2 \
+    media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
