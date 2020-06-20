@@ -73,7 +73,6 @@ PRODUCT_PACKAGES += \
     libtfa98xx
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    audio.deep_buffer.media=true \
     audio.offload.video=true \
     audio.offload.pcm.16bit.enable=true \
     audio.offload.pcm.24bit.enable=true \
