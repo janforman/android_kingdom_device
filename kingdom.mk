@@ -393,7 +393,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2020-02-29
+    ro.lineage.build.vendor_security_patch=2020-07-20
 
 # Vibrator
 PRODUCT_PACKAGES += \
