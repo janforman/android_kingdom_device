@@ -13,8 +13,10 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_USE_AAPT2 := true
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
-    androidx.core_core \
-    androidx.preference_preference
+    android-support-v14-preference \
+    android-support-v7-appcompat \
+    android-support-v7-preference \
+    android-support-v7-recyclerview
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
@@ -26,6 +28,8 @@ ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
     LOCAL_JACK_ENABLED := incremental
 endif
+
+include frameworks/base/packages/SettingsLib/common.mk
 
 include $(BUILD_PACKAGE)
 
