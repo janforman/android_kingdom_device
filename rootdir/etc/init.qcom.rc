@@ -177,6 +177,7 @@ on boot
 on post-fs
     # Allow writing to the kernel trace log.
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
+    start vendor.qseecomd
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -303,7 +304,7 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
-service qseecomd /vendor/bin/qseecomd
+service vendor.qseecomd /vendor/bin/qseecomd
     class core
     user root
     group root
