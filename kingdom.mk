@@ -106,6 +106,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.dedicated.device.for.voip=true \
     vendor.vidc.enc.disable.pq=true \
     vidc.enc.dcvs.extra-buff-count=2 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Bluetooth
@@ -423,4 +424,4 @@ $(call inherit-product-if-exists, vendor/lenovo/kingdom/kingdom-vendor.mk)
 
 #ro.product.first_api_level indicates the first api level that the device has been commercially launched on.
 PRODUCT_PROPERTY_OVERRIDES +=\
-ro.product.first_api_level=19
+    ro.product.first_api_level=19
