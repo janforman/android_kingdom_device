@@ -31,6 +31,7 @@ on early-boot
     # Set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
     write /sys/kernel/boot_adsp/boot 1
+    start vendor.qseecomd
 
 on fs
     wait /dev/block/platform/${ro.boot.bootdevice}
@@ -177,7 +178,6 @@ on boot
 on post-fs
     # Allow writing to the kernel trace log.
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
-    start vendor.qseecomd
 
 # msm specific files that need to be created on /data
 on post-fs-data
