@@ -120,9 +120,6 @@ TARGET_MSM8974_1440P_EGL_WORKAROUND := true
 # Lineage Hardware
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
-# Tap to wake
-TARGET_TAP_TO_WAKE_NODE := "/sys/class/touchscreen/device/gesture"
-
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_LEGACY_HW_DISK_ENCRYPTION := true
