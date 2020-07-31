@@ -39,6 +39,9 @@ on fs
 
     mount_all ./vendor/etc/fstab.qcom --early
 
+    # Start HW service manager early
+    start hwservicemanager
+
     # HACK: In order to successfully read nv_hwid from NV
     # during vendor_load_properties() we need to start adsp
     # with rmt_storage service sooner
@@ -69,6 +72,12 @@ on late-fs
     start servicemanager
     start surfaceflinger
     start bootanim
+
+    # Make sure HW service manager started and start required HAL services
+    wait_for_prop hwservicemanager.ready true
+    start configstore-hal-1-0
+    start gralloc-2-0
+
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
