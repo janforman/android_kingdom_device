@@ -34,9 +34,6 @@ on early-boot
     start vendor.qseecomd
 
 on fs
-    wait /dev/block/platform/${ro.boot.bootdevice}
-    symlink /dev/block/platform/${ro.boot.bootdevice} /dev/block/bootdevice
-
     mount_all ./vendor/etc/fstab.qcom --early
 
     # Start HW service manager early
