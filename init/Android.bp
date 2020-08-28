@@ -19,4 +19,5 @@ cc_library_static {
     include_dirs: ["system/core/init"],
     static_libs: ["libbase"],
     name: "libinit_kingdom",
+    recovery_available: true,
 }
