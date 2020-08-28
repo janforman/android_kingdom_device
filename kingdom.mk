@@ -178,10 +178,6 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
-# Gestures and Glove mode package
-PRODUCT_PACKAGES += \
-    DeviceSettings
-
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
