@@ -348,6 +348,9 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.program_bdaddr.sh
 
+# HIDL HAL list
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
